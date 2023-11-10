@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  background: $white-color;
+  font-size: 18px;
+  font-weight: 400;
+  color: $content-color;
+}
+body.lock {
+  overflow: hidden;
+}
+/* ======= Скрыть секцию !!! ======== */
+.hiden {
+  display: none;
+}
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

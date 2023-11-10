@@ -1,0 +1,102 @@
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0px 0px 14px 0px;
+  background: $header;
+  box-shadow: 0px 1px 8px 0px rgba(49, 49, 49, 0.75);
+  transition: transform .1s linear;
+  z-index: 10;
+
+  @include mediaMobile {
+     padding: 14px 0px 14px 0px;
+  }
+}
+/* Показать Скрыть Хэдер - Высоту выставляем по размеру шапки */
+.header.hide {
+  transform: translateY(-122px);
+}
+// --------------------------------
+.header__top {
+  padding: 14px 15px;
+  background: $accent-color;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 14px;
+  margin-bottom: 14px;
+  & span {
+    color: $white-color;
+    margin-left: 10px;
+  }
+
+  @include mediaMobile {
+     display: none;
+  }
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.menu__item {
+}
+.menu__link {
+  color: $header-color;
+  font-size: 15px;
+  line-height: 1.33;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+.link--active {
+  color: $accent-color;
+}
+.header__basket {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $accent-color;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.header__basket::before {
+  content: "0";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: $white-color;
+  color: $accent-color;
+  border-radius: 50%;
+  box-shadow: 7px 7px 25px 0px rgba(126, 130, 143, 0.27);
+}
+.header__btn {
+  color: $white-color;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $black-color;
+  }
+}

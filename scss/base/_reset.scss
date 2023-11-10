@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ul, ol, li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  max-width: 100%;
+  height: auto;
+}

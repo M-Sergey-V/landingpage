@@ -1,0 +1,33 @@
+.order {
+}
+.order__body {
+  padding: 120px 0px 120px 0px;
+
+  @include mediaIpad {
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px 20px 0px;
+  }
+}
+.block_content--body {
+}
+.body__images--revers {
+  flex-direction: row-reverse;
+}
+.content_texting {
+}
+.block_content {
+}
+.block_titles-title {
+}
+.order__title {
+  font-size: clamp(26px, 20.176px + 1.82vw, 42px);
+  line-height: 1.1;
+  letter-spacing: 1.65px;
+}
+.block_titles-subtitle {
+}
+.block_titles-button {
+}
+.block_content--images {
+}
